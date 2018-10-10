@@ -94,7 +94,11 @@
     <string name="based_on_own_currency">*berdasarkan mata uang sendiri</string>
 
     <string name="tentang">
-        <![CDATA[<b>Tentang Kami</b><br><br>Financial Check adalah aplikasi yang akan membantu pengguna dalam mereview kondisi keuangannya. Fitur-fiturnya membantu pengguna memeriksa keseimbangan pemasukan dan pengeluaran tanpa harus meminta bantuan Financial Advisor.<br><br>Financial Check mudah digunakan dan akan memberikan pengalaman terbaik Anda untuk mengatur pengeluaran agar tidak besar pasak daripada tiang.]]>
+        <![CDATA[
+        Financial Check adalah aplikasi yang akan membantu pengguna dalam mereview kondisi keuangannya.<br><br>
+        Fitur-fiturnya membantu pengguna memeriksa keseimbangan pemasukan dan pengeluaran tanpa harus meminta bantuan Financial Advisor.<br><br>
+        Financial Check mudah digunakan dan akan memberikan pengalaman terbaik Anda untuk mengatur pengeluaran agar tidak besar pasak daripada tiang.
+        ]]>
     </string>
     <string name="masukkan_email_reset">Masukkan Email untuk mereset Password</string>
 </resources>

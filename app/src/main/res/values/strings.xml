@@ -94,7 +94,11 @@
     <string name="based_on_own_currency">*based on own currency</string>
 
     <string name="tentang">
-        <![CDATA[<b>About Us</b><br><br>Financial Check is an application that will help users in reviewing their financial condition. Its features help users check the balance of income and expenses without having to ask for Financial Advisor.<br><br>Financial Check is easy to use and will give you the best experience to manage expenses so that the pegs are not large.]]>
+        <![CDATA[
+        Financial Check is an application that will help users in reviewing their financial condition.<br><br>
+        Its features help users check the balance of income and expenses without having to ask for Financial Advisor.<br><br>
+        Financial Check is easy to use and will give you the best experience to manage expenses so that the pegs are not large.
+        ]]>
     </string>
     <string name="masukkan_email_reset">Enter the Email to reset your Password</string>
 

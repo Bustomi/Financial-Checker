@@ -64,12 +64,14 @@ public class MainActivity extends AppCompatActivity {
     private InterstitialAd intersLangEng;
     private InterstitialAd intersAbout;
 
+    SharedPreferences pref;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        SharedPreferences pref = getSharedPreferences("setting", Activity.MODE_PRIVATE);
+        pref = getSharedPreferences("setting", Activity.MODE_PRIVATE);
         LocalizationUtils.setLocale(pref.getString("language", ""), getBaseContext());
 
         ButterKnife.bind(this);
@@ -268,7 +270,17 @@ public class MainActivity extends AppCompatActivity {
             case R.id.nav_share:
                 Intent sharingIntent = new Intent(Intent.ACTION_SEND);
                 sharingIntent.setType("text/plain");
-                String shareBodyText = "Mau periksa seberapa sehat Keuangan Pribadi anda ?\nSilahkan download aplikasi ini.\nDapatkan sekarang juga : http://play.google.com/store/apps/details?id=" + getApplicationContext().getPackageName();
+                String shareBodyText = "";
+                if(pref.getString("language", "").equalsIgnoreCase("en")){
+                    shareBodyText = "Do you want to check your private financial security ? \n" +
+                            "Let's download this app right now : \n" +
+                            "http://play.google.com/store/apps/details?id="+ getApplicationContext().getPackageName();
+                }
+                else{
+                    shareBodyText = "Mau periksa seberapa sehat Keuangan Pribadi anda ?\n" +
+                            "Silahkan download aplikasi ini sekarang juga : \n" +
+                            "http://play.google.com/store/apps/details?id="+ getApplicationContext().getPackageName();
+                }
 
                 sharingIntent.putExtra(Intent.EXTRA_SUBJECT,"Financial Checker");
                 sharingIntent.putExtra(Intent.EXTRA_TEXT, shareBodyText);
