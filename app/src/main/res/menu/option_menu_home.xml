@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Main Menu"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_option">
+        <menu>
+            <item
+                android:id="@+id/nav_bahasa"
+                android:title="@string/bahasa"
+                android:orderInCategory="100"
+                android:icon="@drawable/pngworld" >
+                <menu>
+                    <item
+                        android:id="@+id/nav_inggris"
+                        android:title="@string/inggris"
+                        android:orderInCategory="100"
+                        android:icon="@drawable/inggris" />
+                    <item
+                        android:id="@+id/nav_indonesia"
+                        android:title="@string/indonesia"
+                        android:orderInCategory="100"
+                        android:icon="@drawable/indonesia" />
+                </menu>
+
+            </item>
+            <item
+                android:id="@+id/nav_tentang"
+                android:title="@string/tentang_kami"
+                android:orderInCategory="100"
+                android:icon="@drawable/pnginformation"/>
+
+            <item
+                android:id="@+id/nav_share"
+                android:title="@string/share_this_apps"
+                android:orderInCategory="100"
+                android:icon="@drawable/pngshare"/>
+            <item
+                android:id="@+id/nav_suka"
+                android:title="@string/suka_Aplikasi_ini"
+                android:orderInCategory="100"
+                android:icon="@drawable/pnglike"/>
+        </menu>
+    </item>
+
+</menu>

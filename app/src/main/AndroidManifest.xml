@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.luckynineapps.financialchecker">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="FinancialChecker.db" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="5" />
+        <meta-data
+            android:name="AA_DB_MODEL"
+            android:value="" />
+        <meta-data
+            android:name="AA_MODELS"
+            android:value="com.luckynineapps.financialchecker.model.SpendingMonth, com.luckynineapps.financialchecker.model.Spending, com.luckynineapps.financialchecker.model.PassiveIncome, com.luckynineapps.financialchecker.model.ActiveIncome"/>
+        <activity android:name=".activity.SplashScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity"/>
+        <activity android:name=".activity.common.IncomeActivity" />
+        <activity android:name=".activity.common.PassiveIncomeActivity" />
+        <activity android:name=".activity.common.ResultActivity" />
+        <activity android:name=".activity.common.SpendingMonthActivity" />
+        <activity android:name=".activity.common.SpendingActivity" />
+        <activity android:name=".activity.AboutActivity" />
+    </application>
+
+</manifest>

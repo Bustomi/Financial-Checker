@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:padding="10dp">
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/edit_data_keuangan"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_keterangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:inputType="text"
+            android:textColorHint="@color/white"
+            android:hint="@string/masukkan_keterangan" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_nominal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:inputType="number"
+            android:textColorHint="@color/white"
+            android:hint="@string/masukkan_nominal_rp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>
